@@ -11,7 +11,7 @@ const getMenuFrontEnd = (role = 'USER_ROLE') => {
             { titulo: 'rxjs', url: 'rxjs' },
             { titulo: 'Promesas', url: 'promesas' },
             { titulo: 'ProgressBar', url: 'progress' },
-            { titulo: 'TPV', url: 'tpv' },
+            
           ]
         },
     
@@ -22,6 +22,7 @@ const getMenuFrontEnd = (role = 'USER_ROLE') => {
             // { titulo: 'Usuarios', url: 'usuarios' },
             { titulo: 'Hospitales', url: 'hospitales' },
             { titulo: 'Médicos', url: 'medicos' },
+            { titulo: 'TPV', url: 'tpv' },
           ]
         },
       ];

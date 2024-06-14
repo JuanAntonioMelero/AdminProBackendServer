@@ -5,7 +5,7 @@ const Producto = require('../models/producto');
 const getProductos = async(req, res = response) => {
 
     const productos = await Producto.find()
-                                    .populate('nombre img categoria');
+                                    .populate('nombre img categoria precio');
 
     res.json({
         ok: true,
@@ -15,7 +15,7 @@ const getProductos = async(req, res = response) => {
 const getProductosPorCategorias = async(req, res = response) => {
     const busqueda = req.params.categoria;
     const productos = await Producto.find({"categoria":busqueda})
-                                    .populate('nombre img categoria');
+                                    .populate('nombre img categoria precio');
 
     res.json({
         ok: true,
